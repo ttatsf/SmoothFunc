@@ -1,4 +1,4 @@
- SmoothFunc KEYWORD1
- GetAverage KEYWORD1
- IsNewInRecents KEYWORD1
- IsUniqueInUniques KEYWORD1
+ SmoothFunc	KEYWORD1
+ GetAverage	KEYWORD1
+ IsNewInRecents	KEYWORD1
+ IsUniqueInUniques	KEYWORD1
