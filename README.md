@@ -44,6 +44,7 @@ void loop(){
       //Do anything you want only when the data changed.
     }
   }
+  delay(10);
 }
 ```
 
