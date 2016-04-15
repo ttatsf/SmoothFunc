@@ -3,9 +3,9 @@ Functions for smoothing data, especially good for analogRead().
 ##Description
 SmoothFunc has 3 simple function objects.
 
-+ "GetAverage" :calculate average with incoming data and internal history data,then register new data to the history and throw the oldest.
-+ "IsNewInRecents" :return whether incoming data is new in internal history data,then register new data into the history and throw away the oldest.
-+ "IsUniqueInUniques" :return whether incoming data is unique in internal history data,if so,register the data into the history and throw away the oldest.
++ "GetAverage" : calculate average with incoming data and internal history data,then register new data to the history and throw away the oldest.
++ "IsNewInRecents" : return whether incoming data is new in internal history data,then register new data into the history and throw away the oldest.
++ "IsUniqueInUniques" : return whether incoming data is unique in internal history data,if so,register the data into the history and throw away the oldest.
 
 "IsUniqueInUniques" is a variation of "IsNewInRecents".
 If you use "IsNewInRecents" and your sketch still runs unstably,consider using "IsUniqueInUniques".
