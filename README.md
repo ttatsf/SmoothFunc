@@ -25,7 +25,7 @@ IsNewInRecents isNew0;  //    IsNewInRecents isNew(5);
 GetAverage getAverage[4]; //or: GetAverage getAverage[4]={10,10,10,10};	  //You can also set array's element's history size.This sets each to 10.
 IsNewInRecents isNew[4];  //    IsNewInRecents isNew[4]={5,5,5,5};  //set each history size to 5.
 
-const int PIN0 = 5;
+const int PIN_0 = 5;
 const int PIN[4]={0,1,2,3};
 
 void setup(){
@@ -33,7 +33,7 @@ void setup(){
 }
 void loop(){
   // regular pattern :
-  const int rawData = analogRead(PIN0);
+  const int rawData = analogRead(PIN_0);
   const int smoothedData = getAverage0(rawData);
   if (isNew0(smoothedData)) {
     //Do anything you want only when the data changed.
