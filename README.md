@@ -38,16 +38,16 @@ void setup(){
 void loop(){
   // regular pattern :
   const int RAW_DATA = analogRead(PIN_0);
-  const int smoothedData = getAverage0(RAW_DATA);
-  if (isNew0(smoothedData)) {
+  const int SMOOTHED_DATA = getAverage0(RAW_DATA);
+  if (isNew0(SMOOTHED_DATA)) {
     //Do anything you want only when the data changed.
   }
 
   //regular pattern for array :
   for (int i=0; i < 4; i++) {
     const int RAW_DATA = analogRead(PIN[i]);
-    const int smoothedData = getAverage[i](RAW_DATA);
-    if (isNew[i](smoothedData)) {
+    const int SMOOTHED_DATA = getAverage[i](RAW_DATA);
+    if (isNew[i](SMOOTHED_DATA)) {
       //Do anything you want only when the data changed.
     }
   }
