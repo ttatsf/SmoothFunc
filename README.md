@@ -3,12 +3,13 @@ Functions for smoothing data, especially good for analogRead().
 ##Description
 SmoothFunc has 3 simple function objects.
 
-+ "GetAverage" : calculate average with incoming data and internal history data,then register new data to the history and throw away the oldest.
-+ "IsNewInRecents" : return whether incoming data is new in internal history data,then register new data into the history and throw away the oldest.
-+ "IsUniqueInUniques" : return whether incoming data is unique in internal history data,if so,register the data into the history and throw away the oldest.
++ "GetAverage" : calculate sum of incoming data and internal history data,register new data to the history and throw away the oldest, then return the average.
++ "IsNewInRecents" : calculate whether incoming data is new in internal history data, register new data into the history and throw away the oldest, then return the result.
++ "IsUniqueInUniques" : calculate whether incoming data is unique in internal history data,if so, register the data into the history and throw away the oldest, then return the result.
 
 "IsUniqueInUniques" is a variation of "IsNewInRecents".
 If you use "IsNewInRecents" and your sketch still runs unstably,consider using "IsUniqueInUniques".
+It may stabilize your sketch on smaller history size.
 
 ##Installation
 [Download ZIP](https://github.com/ttatsf/SmoothFunc/archive/master.zip) and [follow instructions here.](https://www.arduino.cc/en/Guide/Libraries)
