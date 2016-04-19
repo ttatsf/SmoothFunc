@@ -9,6 +9,10 @@ SmoothFunc has 3 simple function objects.
 
 "IsUniqueInUniques" is a variation of "IsNewInRecents".
 If you use "IsNewInRecents" and your sketch still runs unstably,consider using "IsUniqueInUniques".
+
+##Installation
+[Download ZIP](https://github.com/ttatsf/SmoothFunc/archive/master.zip) and [follow instructions here.](https://www.arduino.cc/en/Guide/Libraries)
+
 ##Typical usage
 As these are "function" object, you can(and have to) use each instance as  "function" directly.
 
@@ -33,16 +37,16 @@ void setup(){
 }
 void loop(){
   // regular pattern :
-  const int rawData = analogRead(PIN_0);
-  const int smoothedData = getAverage0(rawData);
+  const int RAW_DATA = analogRead(PIN_0);
+  const int smoothedData = getAverage0(RAW_DATA);
   if (isNew0(smoothedData)) {
     //Do anything you want only when the data changed.
   }
 
   //regular pattern for array :
   for (int i=0; i < 4; i++) {
-    const int rawData = analogRead(PIN[i]);
-    const int smoothedData = getAverage[i](rawData);
+    const int RAW_DATA = analogRead(PIN[i]);
+    const int smoothedData = getAverage[i](RAW_DATA);
     if (isNew[i](smoothedData)) {
       //Do anything you want only when the data changed.
     }
